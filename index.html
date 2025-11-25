@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <img src="data:image/png;base64,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" 
+                alt="logo HTML" width="100" height="100"/>
+            </td>
+            <td>
+                <h1>
+                    <b>Lý thuyết về HTML</b>
+                </h1>
+            </td>
+        </tr>
+    </table>
+    
+    <hr/>
+
+   <h2><b>Anatomy of HTML</b></h2> 
+   <ul>
+            <li>
+                <b>Thẻ Mở</b>: Đây là điểm bắt đầu của thẻ. Nó bao gồm dấu nhỏ hơn (<), tên thẻ, có thể có một số thuộc tính, và dấu lớn hơn (>). Ví dụ: <code>&lt;tagname attribute="value"&gt;</code>
+            </li>
+            <li>
+                <b>Thuộc tính</b>: Cung cấp thông tin bổ sung về phần tử. Một thuộc tính thường có tên và giá trị, ví dụ, class="text-bold". Không phải tất cả thẻ đều có thuộc tính.
+            </li>
+            <li>
+                <b>Nội dung</b>: Đây là nội dung thực tế mà thẻ tác động lên. Nó có thể là văn bản, hình ảnh, liên kết, hoặc các thẻ HTML khác.
+            </li>
+            <li>
+               <b>Thẻ Đóng</b>: Nó biểu thị sự kết thúc của thẻ. Nó giống như thẻ mở nhưng bao gồm một dấu gạch chéo trước tên thẻ, ví dụ: <code>&lt;/tagname&gt;</code>
+            </li>
+        </ul>
+    <img src="data:image/png;base64,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" 
+    alt="ảnh minh họa cấu trúc HTML" width="300" height="150"/>
+
+    <h2><b>Heading tag and Horizontal tag</b></h2>
+    <p>
+        Thẻ tiêu đề HTML, đóng vai trò quan trọng trong việc cấu trúc nội
+        dung trên các trang web. Chúng giúp tổ chức nội dung một cách có hệ thống và
+        nâng cao trải nghiệm người dùng.
+    </p>
+    <ul>
+        <li>
+            <b>&lt;h1&gt; to &lt;h6&gt;:</b> Các thẻ này được sử dụng để định nghĩa các tiêu đề với mức độ quan trọng khác nhau. &lt;h1&gt; là tiêu đề quan trọng nhất, trong khi &lt;h6&gt; là tiêu đề ít quan trọng nhất.
+        </li>
+        <li>
+            <b>&lt;hr&gt;:</b> Thẻ này được sử dụng để chèn một đường ngang (horizontal rule) vào trang web, thường dùng để phân tách các phần nội dung khác nhau.
+        </li>
+    </ul>
+
+    <ol tyle="1">
+        <li>
+            Vai trò và Tầm quan trọng của Mỗi Thẻ Tiêu Đề
+            <ul>
+                <li>
+                    &lt;h1&gt;: Thường được sử dụng cho tiêu đề chính của trang web hoặc bài viết. Nó giúp người dùng và công cụ tìm kiếm hiểu rõ về nội dung chính của trang.
+                </li>
+                <li>
+                    &lt;h2&gt; to &lt;h6&gt;: Được sử dụng để tạo các tiêu đề phụ, giúp tổ chức nội dung thành các phần rõ ràng và dễ đọc hơn. Mỗi thẻ đại diện cho một mức độ quan trọng giảm dần.
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            Khả năng Truy cập
+            <ul>
+                <li>
+                    Sử dụng đúng các thẻ tiêu đề là rất quan trọng cho khả năng truy cập. Các
+                    trình đọc màn hình sử dụng những thẻ này để điều hướng qua nội dung,
+                    giúp người dùng khiếm thị hiểu cấu trúc của trang.
+
+                </li>
+                <li>
+                    Nên sử dụng các tiêu đề một cách tuần tự, tránh bỏ qua các cấp độ, vì điều
+                    này có thể gây nhầm lẫn cho người dùng trình đọc màn hình.
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            Ảnh hưởng đến SEO
+            <ul>
+                <li>
+                    Các tiêu đề giúp các công cụ tìm kiếm hiểu cấu trúc và bối cảnh của nội
+                    dung, góp phần cải thiện thứ hạng tìm kiếm.
+                </li>
+                <li>
+                    Nên bao gồm các từ khóa liên quan trong các thẻ tiêu đề nhưng tránh nhồi
+                    nhét từ khóa, vì điều này có thể ảnh hưởng tiêu cực đến SEO.
+                </li>
+            </ul>
+        </li>
+    </ol>
+
+    <p>Thẻ &lt;hr&gt; không chỉ là một dòng kẻ ngang; nó là một phần tử ngữ nghĩa chỉ ra sự thay đổi chủ đề trong nội dung.</p>
+    <ul>
+        <li>
+            Thẻ &lt;hr&gt; được sử dụng để biểu thị một sự phân cách chủ đề trong nội
+            dung, như sự chuyển đổi chủ đề hoặc sự chuyển tiếp giữa các phần.
+
+        </li>
+        <li>
+            Nó không chỉ là một yếu tố trang trí; nó mang ý nghĩa, quan trọng đối với
+            trình đọc màn hình và SEO.
+        </li>
+    </ul>
+
+    <h2><b>Paragraph tag</b></h2>
+    <ol>
+        <li>
+            Định Nghĩa và Mục Đích của Thẻ &lt;p&gt;
+            <ul>
+                <li>
+                    Thẻ đoạn văn HTML (&lt;p&gt;) là một phần tử cơ bản được sử dụng để định nghĩa các đoạn văn bản trên trang web.
+                </li>
+                <li>
+                    Mục đích chính của thẻ này là phân chia nội dung thành các
+                    phần dễ đọc, giúp cải thiện cấu trúc và tính rõ ràng của trang.
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            Cú Pháp Cơ Bản của Thẻ &lt;p&gt;
+            <ul>
+                <li>
+                    Cú pháp cơ bản của thẻ đoạn văn bao gồm một thẻ mở (&lt;p&gt;) và một thẻ đóng (&lt;/p&gt;).
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            Tầm Quan Trọng Trong Cấu Trúc Nội Dung
+            <ul>
+                <li>
+                    Sử dụng thẻ &lt;p&gt; giúp tổ chức nội dung thành các đoạn văn rõ ràng, làm cho trang web dễ đọc và thân thiện với người dùng hơn.
+                </li>
+                <li>
+                    Nó cũng đóng vai trò quan trọng trong việc cải thiện SEO, vì các công cụ tìm kiếm sử dụng cấu trúc đoạn văn để hiểu nội dung của trang.
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            Khả Năng Truy Cập 
+            <ul>
+                <li>
+                    Thẻ &lt;p&gt; đóng một vai trò quan trọng trong việc làm cho trang web của bạn dễ
+                    truy cập hơn. 
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            SEO và Thẻ &lt;p&gt;
+            <ul>
+                <li>
+                    Trong mắt các công cụ tìm kiếm, thẻ <> góp phần quan trọng trong việc cấu trúc nội dung.
+                </li>
+                <li>
+                    Sử dụng thẻ &lt;p&gt; một cách hợp lý giúp cải thiện khả năng hiển thị của trang web trên các công cụ tìm kiếm.
+                </li>
+        </li>
+    </ol>
+
+    <h2><b>Semantic in HTML</b></h2>
+    <table width="100%" height="200">
+        <tr>
+            <td>
+                <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1707306696937/5cd8f193-77dc-47fe-ab3b-d04724be1718.png?auto=compress,format&format=webp" 
+                alt="ảnh minh họa về semantic trong HTML" width="300" height="300"/>
+            </td>
+            <td>
+                "Tính semantic" hay "ngữ nghĩa" trong HTML nói đến việc sử dụng các thẻ HTML để
+                truyền đạt ý nghĩa và cấu trúc của nội dung, không chỉ dừng lại ở việc trình bày nó.
+                Khi một phần tử HTML có "tính semantic", nó nói lên chính xác nội dung hoặc chức
+                năng của nó trong cấu trúc tài liệu
+            </td>
+        </tr>
+    </table>
+    <ul>
+        <li>
+            <h3><b>Tại sao Semantic quan trọng?</b></h3>     
+            <ol>
+                <li>
+                    <b>Khả Năng Truy Cập (Accessibility)</b>: Các công cụ hỗ trợ đọc màn hình dựa vào
+                    các thẻ semantic để hiểu cấu trúc và nội dung, giúp người dùng khiếm thị hoặc
+                    có hạn chế về thị lực dễ dàng tiếp cận thông tin.
+                </li>
+
+                <li>
+                    <b>SEO (Search Engine Optimization)</b>: Các công cụ tìm kiếm sử dụng các thẻ
+                    semantic để hiểu rõ hơn về nội dung của trang web, từ đó cải thiện thứ hạng tìm
+                    kiếm.
+                </li>
+
+                <li>
+                    <b>Bảo Trì và Phát Triển Dễ Dàng Hơn</b>: Mã HTML có tính semantic rõ ràng giúp
+                    các nhà phát triển dễ dàng hiểu và bảo trì mã nguồn.
+                </li>
+            </ol>   
+        </li>
+
+        <li>
+            <h3><b>Ví dụ về Tính Semantic trong HTML</b></h3>
+            <ul>
+                <li>
+                    <b>&lt;header&gt;</b>: Đại diện cho phần đầu của một trang hoặc một phần của trang,
+                    thường chứa tiêu đề, logo, và các liên kết điều hướng chính.
+                </li>
+
+                <li>
+                    <b>&lt;nav&gt;</b>: Chứa các liên kết điều hướng chính của trang web.
+                </li>
+
+                <li>
+                    <b>&lt;article&gt;</b>: Đại diện cho một nội dung độc lập, có thể tái sử dụng
+                    như bài viết, blog post, hoặc tin tức.
+                </li>
+
+                <li>
+                    <b>&lt;section&gt;</b>: Được sử dụng để nhóm các nội dung liên quan lại với nhau,
+                    thường có tiêu đề riêng.
+                </li>
+
+                <li>
+                    <b>&lt;aside&gt;</b>: Chứa nội dung phụ trợ hoặc liên quan, như thanh bên hoặc
+                    quảng cáo.
+                </li>
+
+                <li>
+                    <b>&lt;footer&gt;</b>: Đại diện cho phần chân trang của một trang hoặc một phần
+                    của trang, thường chứa thông tin bản quyền, liên kết pháp lý, và thông tin liên hệ.
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2><b>Italicize tag</b></h2>
+     <p>
+                Thẻ &lt;i&gt; và &lt;em&gt; trong HTML đều được sử dụng để làm nghiêng văn bản,
+                nhưng chúng có ý nghĩa và mục đích sử dụng khác nhau.
+            </p>
+    <ul>
+        <li>
+            <h3><b>Giới Thiệu về Thẻ &lt;i&gt; và &lt;em&gt;</b></h3>
+           <ul>
+            <li>
+                <b>Thẻ &lt;i&gt;</b>:thường được sử dụng để hiển thị chữ nghiêng, thường dùng
+                cho các trường hợp như tên tác phẩm, từ ngữ nước ngoài, hoặc khi muốn nhấn
+                mạnh một cách nhẹ nhàng. Tuy nhiên, nó không mang tính ngữ nghĩa mạnh mẽ
+            </li>
+            <li>
+                <b>Thẻ &lt;em&gt;</b>: được sử dụng để nhấn mạnh văn bản, mang tính ngữ
+                nghĩa hơn. Khi sử dụng thẻ &lt;em&gt;, trình duyệt và các công cụ hỗ trợ
+                truy cập sẽ hiểu rằng phần văn bản này quan trọng hơn so với phần còn lại.
+            </li>      
+           </ul>
+        </li>
+            
+        <li>
+            <h3><b>Syntax của Thẻ &lt;i&gt; và &lt;em&gt;</b></h3>
+            <ul>
+                <li>
+                    <b>Thẻ &lt;i&gt;:</b>
+                    <pre><code>&lt;i&gt;Văn bản nghiêng&lt;/i&gt;</code></pre>
+                </li>
+                <li>
+                    <b>Thẻ &lt;em&gt;:</b>
+                    <pre><code>&lt;em&gt;Văn bản nhấn mạnh&lt;/em&gt;</code></pre>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h3><b>Khi Nào Nên Sử Dụng Thẻ &lt;i&gt; và &lt;em&gt;</b></h3>
+            <ul>
+                <li>
+                    Sử dụng thẻ &lt;i&gt; khi bạn muốn làm nghiêng văn bản mà không cần
+                    nhấn mạnh ngữ nghĩa, ví dụ như tên sách, từ ngữ nước ngoài, hoặc thuật
+                    ngữ kỹ thuật.
+                </li>
+                <li>
+                    Sử dụng thẻ &lt;em&gt; khi bạn muốn nhấn mạnh một phần văn bản để
+                    biểu thị tầm quan trọng hoặc sự khác biệt trong ngữ cảnh.
+                </li>
+            </ul>   
+        </li>
+    </ul>
+
+    <h2><b>Bold tag</b></h2>
+    <p>
+        Thẻ &lt;b&gt; và &lt;strong&gt; trong HTML đều được sử dụng để làm đậm văn bản,
+        nhưng chúng có ý nghĩa và mục đích sử dụng khác nhau.
+    </p>
+    <ul>
+        <li>
+            <b>Giới Thiệu về Thẻ &lt;b&gt; và &lt;strong&gt;</b>
+            <ul>
+                <li>
+                    <b>Thẻ &lt;b&gt;</b>: được sử dụng để làm đậm văn bản mà không mang
+                    ý nghĩa ngữ nghĩa đặc biệt. Nó thường được dùng để làm nổi bật
+                    các từ hoặc cụm từ trong văn bản.
+                </li>
+                <li>
+                    <b>Thẻ &lt;strong&gt;</b>: được sử dụng để nhấn mạnh tầm quan trọng
+                    của văn bản. Khi sử dụng thẻ &lt;strong&gt;, trình duyệt và các
+                    công cụ hỗ trợ truy cập sẽ hiểu rằng phần văn bản này có ý nghĩa
+                    quan trọng hơn so với phần còn lại.
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <b>Syntax của Thẻ &lt;b&gt; và &lt;strong&gt;</b>
+            <ul>
+                <li>
+                    <b>Thẻ &lt;b&gt;:</b>
+                    <pre><code>&lt;b&gt;Văn bản đậm&lt;/b&gt;</code></pre>
+                </li>
+                <li>
+                    <b>Thẻ &lt;strong&gt;:</b>
+                    <pre><code>&lt;strong&gt;Văn bản quan trọng&lt;/strong&gt;</code></pre>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <b>Khi Nào Nên Sử Dụng Thẻ &lt;b&gt; và &lt;strong&gt;</b>
+            <ul>
+                <li>
+                    Sử dụng thẻ &lt;b&gt; khi bạn muốn làm đậm văn bản để làm nổi bật
+                    mà không cần nhấn mạnh ngữ nghĩa, ví dụ như tiêu đề, từ khóa, hoặc
+                    các phần quan trọng trong văn bản.
+                </li>
+                <li>
+                    Sử dụng thẻ &lt;strong&gt; khi bạn muốn nhấn mạnh tầm quan trọng
+                    của một phần văn bản, đặc biệt khi nó mang ý nghĩa quan trọng trong
+                    ngữ cảnh.
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2><b>List tag</b></h2>
+    <p>
+        Trong HTML, có hai loại danh sách chính: danh sách không thứ tự (unordered list)
+        và danh sách có thứ tự (ordered list). Mỗi loại danh sách sử dụng các thẻ khác nhau
+        để định nghĩa cấu trúc và mục đích của chúng.
+    </p>
+    <ul>
+        <li>
+            <b>Danh Sách Không Thứ Tự (Unordered List)</b>
+            <ul>
+                <li>
+                    Được định nghĩa bằng thẻ &lt;ul&gt; (unordered list).
+                </li>
+                <li>
+                    Mỗi mục trong danh sách được định nghĩa bằng thẻ &lt;li&gt; (list item).
+                </li>
+                <li>
+                    Các mục trong danh sách không có thứ tự cụ thể và thường được hiển thị với các dấu chấm đầu dòng (bullet points).
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <b>Danh Sách Có Thứ Tự (Ordered List)</b>
+            <ul>
+                <li>
+                    Được định nghĩa bằng thẻ &lt;ol&gt; (ordered list).
+                </li>
+                <li>
+                    Mỗi mục trong danh sách cũng được định nghĩa bằng thẻ &lt;li&gt;.
+                </li>
+                <li>
+                    Các mục trong danh sách có thứ tự cụ thể và thường được hiển thị với các số hoặc chữ cái để biểu thị thứ tự.
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul>
+        <h3><b>Thuộc Tính và Ví Dụ về Thẻ &lt;ul&gt; và &lt;ol&gt; trong HTML</b></h3>
+        <ol>
+            <li>
+                <b>Thuộc Tính Của Thẻ &lt;ul&gt;</b>
+                <ul>
+                    <li> 
+                        <b>type</b>: Xác định kiểu dấu đầu dòng cho các mục trong danh sách. Các giá trị phổ biến bao gồm "disc" (mặc định), "circle", và "square".
+                    </li>
+                    <li>
+                        <b>compact</b>: Thuộc tính này được sử dụng để giảm khoảng cách giữa các mục trong danh sách, làm cho danh sách trông gọn gàng hơn.
+                    </li>
+                    <li>
+                        <b>style</b>: Cho phép áp dụng các kiểu CSS trực tiếp cho danh sách, như màu sắc, phông chữ, và khoảng cách.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Thuộc Tính Của Thẻ &lt;ol&gt;</b>
+                <ul>
+                    <li>
+                        <b>type</b>: Xác định kiểu đánh số cho các mục trong danh sách. Các giá trị phổ biến bao gồm "1" (số), "A" (chữ hoa), "a" (chữ thường), "I" (số La Mã hoa), và "i" (số La Mã thường).
+                    </li>
+                    <li>
+                        <b>start</b>: Xác định số bắt đầu cho danh sách có thứ tự. Mặc định là 1, nhưng bạn có thể thay đổi nó thành bất kỳ số nào.
+                    </li>
+                    <li>
+                        <b>reversed</b>: Thuộc tính này được sử dụng để hiển thị danh sách có thứ tự theo chiều ngược lại, bắt đầu từ số lớn nhất đến số nhỏ nhất.
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </ul>
+
+    <h2><b>Anchor tag</b></h2>
+    <p>
+        Thẻ &lt;a&gt; trong HTML, còn được gọi là thẻ neo (anchor tag), được sử dụng để tạo liên kết đến các trang web khác, tài liệu, địa chỉ email, hoặc các phần cụ thể trong cùng một trang web. Đây là một trong những thẻ quan trọng nhất trong HTML vì nó cho phép người dùng điều hướng giữa các trang và tài nguyên trên internet.
+    </p>
+    <ul>
+        <li>
+            <b>Cú Pháp Cơ Bản của Thẻ &lt;a&gt;</b>
+            <pre><code>&lt;a href="URL"&gt;Văn bản liên kết&lt;/a&gt;</code></pre>
+            Trong đó, "URL" là địa chỉ của trang web hoặc tài nguyên mà bạn muốn liên kết đến, và "Văn bản liên kết" là phần văn bản mà người dùng sẽ nhấp vào để truy cập liên kết.
+        </li>
+
+        <li>
+            <b>Thuộc Tính Quan Trọng của Thẻ &lt;a&gt;</b>
+            <ul>
+                <li>
+                    <b>href</b>: Xác định địa chỉ URL của liên kết. Đây là thuộc tính quan trọng nhất của thẻ &lt;a&gt;.
+                </li>
+                <li>
+                    <b>target</b>: Xác định nơi mở liên kết. Ví dụ, giá trị "_blank" sẽ mở liên kết trong một tab hoặc cửa sổ mới.
+                </li>
+                <li>
+                    <b>title</b>: Cung cấp thông tin bổ sung về liên kết, thường hiển thị dưới dạng tooltip khi người dùng di chuột qua liên kết.
+                </li>
+                <li>
+                    <b>rel</b>: Xác định mối quan hệ giữa trang hiện tại và trang được liên kết. Ví dụ, "nofollow" cho biết các công cụ tìm kiếm không nên theo dõi liên kết này.
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <b>Ví Dụ Về Thẻ &lt;a&gt;</b>
+            <pre><code>&lt;a href="https://www.example.com" target="_blank" title="Truy cập Example.com"&gt;Visit Example.com&lt;/a&gt;</code></pre>
+        </li>
+    </ul>
+
+    <p>
+        <b>Lưu ý: </b>Khi sử dụng thẻ &lt;a&gt;, hãy đảm bảo rằng URL là chính xác và liên kết đến các trang web hoặc tài nguyên đáng tin cậy để cung cấp trải nghiệm tốt nhất cho người dùng.
+        <ul>
+            <li>
+                Khi sử dụng thuộc tính <b>href</b> để trỏ đến một địa chỉ liên kết, cần đảm bảo rằng
+                địa chỉ liên kết đó là hợp lệ. Nếu không, trình duyệt sẽ không thể mở liên kết.
+            </li>
+            <li>
+                Sử dụng thuộc tính <b>target="_blank"</b> một cách thận trọng, vì nó có thể
+                ảnh hưởng đến trải nghiệm người dùng và bảo mật.
+            </li>
+        </ul>
+    </p>
+
+    <h2><b>Table in html</b></h2>
+    <ul>
+        <h3>Cấu trúc của phần tử &lt;table&gt;</h3>
+        <p>
+            Bảng trong HTML được tạo ra bằng cách sử dụng thẻ &lt;table&gt; cùng với các thẻ con như &lt;tr&gt;, &lt;td&gt;, và &lt;th&gt;.
+        </p>
+        <img src="img/html.png" alt="Cấu trúc của table" />
+        <ul>
+            <li>
+                <b>Thẻ &lt;table&gt;:</b> Được sử dụng để tạo bảng trong HTML. Nó là phần tử cha chứa tất cả các phần tử liên quan đến bảng.
+            </li>
+            <li>
+                <b>Thẻ &lt;tr&gt;:</b> Đại diện cho một hàng trong bảng. Mỗi hàng có thể chứa nhiều ô dữ liệu hoặc tiêu đề.
+            </li>
+            <li>
+                <b>Thẻ &lt;td&gt;:</b> Đại diện cho một ô dữ liệu trong bảng. Nó chứa nội dung dữ liệu của bảng.
+            </li>
+            <li>
+                <b>Thẻ &lt;th&gt;:</b> Đại diện cho một ô tiêu đề trong bảng. Nội dung trong thẻ này thường được in đậm và căn giữa để phân biệt với các ô dữ liệu.
+            </li>
+        </ul>
+        <h3>Ví dụ </h3>
+        <img src="img/exhtml.png" alt="Ví dụ" />     
+    </ul>
+    <p>Bảng này sẽ hiển thị dữ liệu sau:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Tên</th>
+                <th>Ngày sinh</th>
+                <th>Giới tính</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nguyễn Văn A</td>
+                <td>1990-01-01</td>
+                <td>Nam</td>
+            </tr>
+            <tr>
+                <td>Trần Thị B</td>
+                <td>1991-02-02</td>
+                <td>Nữ</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <h3>Các thuộc tính của phần tử  &lt;table&gt;</h3>
+        <ul>
+            <li>
+                <b>border:</b> Xác định độ dày của viền bảng. Ví dụ: &lt;table border="1"&gt; sẽ tạo một bảng với viền dày 1 pixel.
+            </li>
+            <li>
+                <b>cellpadding:</b> Xác định khoảng cách giữa nội dung ô và viền ô. Ví dụ: &lt;table cellpadding="10"&gt; sẽ tạo khoảng cách 10 pixel.
+            </li>
+            <li>
+                <b>cellspacing:</b> Xác định khoảng cách giữa các ô trong bảng. Ví dụ: &lt;table cellspacing="5"&gt; sẽ tạo khoảng cách 5 pixel giữa các ô.
+            </li>
+            <li>
+                <b>width và height:</b> Xác định chiều rộng và chiều cao của bảng. Ví dụ: &lt;table width="500" height="300"&gt; sẽ tạo bảng có kích thước 500x300 pixel.
+            </li>
+            <li>
+                <b>align:</b> Xác định vị trí căn chỉnh của bảng trên trang. Ví dụ: &lt;table align="center"&gt; sẽ căn giữa bảng trên trang.
+            </li>
+        </ul>
+    </ul>
+
+    <h2><b>Image tag</b></h2>
+    <p>
+        Thẻ &lt;img&gt; trong HTML được sử dụng để chèn hình ảnh vào trang web. Đây là một thẻ tự đóng, có nghĩa là nó không cần thẻ đóng riêng biệt. Thẻ &lt;img&gt; yêu cầu ít nhất hai thuộc tính quan trọng: <b>src</b> và <b>alt</b>.
+    </p>
+    <ul>
+        <li>
+            <b>Thuộc Tính Cơ Bản của Thẻ &lt;img&gt;</b>
+            <ul>
+                <li>
+                    <b>src</b>: Xác định đường dẫn đến tệp hình ảnh mà bạn muốn hiển thị trên trang web. Đây có thể là một URL tuyệt đối hoặc tương đối.
+                </li>
+                <li>
+                    <b>alt</b>: Cung cấp văn bản thay thế cho hình ảnh. Văn bản này sẽ hiển thị nếu hình ảnh không thể tải được và cũng giúp cải thiện khả năng truy cập cho người dùng sử dụng trình duyệt
+                </li>
+            </ul>
+        </li>
+        <li>
+            <b>Thuộc Tính Bổ Sung của Thẻ &lt;img&gt;</b>
+            <ul>
+                <li>
+                    <b>width và height</b>: Xác định chiều rộng và chiều cao của hình ảnh. Bạn có thể sử dụng giá trị pixel hoặc phần trăm.
+                </li>
+                <li>
+                    <b>title</b>: Cung cấp thông tin bổ sung về hình ảnh, thường hiển thị dưới dạng tooltip khi người dùng di chuột qua hình ảnh.
+                </li>
+                <li>
+                    <b>loading</b>: Thuộc tính này cho phép bạn kiểm soát cách tải hình ảnh. Ví dụ, giá trị "lazy" sẽ trì hoãn việc tải hình ảnh cho đến khi nó gần xuất hiện trong khung nhìn của người dùng, giúp cải thiện hiệu suất trang web.
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
